@@ -11,7 +11,9 @@ class CatalogController extends Controller
     {
         $peliculas = Movie::all();
         return view('catalog.index',
-        array('arrayPeliculas' => $peliculas));
+        array(
+            'header' => 'listado de peliculas',
+            'arrayPeliculas' => $peliculas));
     }
 
     public function getShow($id)
