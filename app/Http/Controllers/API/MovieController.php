@@ -62,7 +62,7 @@ class MovieController extends Controller
      */
     public function update(Request $request, Movie $movie)
     {
-        //
+
     }
 
     /**
